@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\natas\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\natas\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_Restaurant.-1890617754.00" t="ExcludeRecursive" />
+    <e p="C:\Users\natas\AppData\Roaming\JetBrains\Rider2020.2\scratches" t="IncludeRecursive" />
+    <e p="D:\ПАРИ\КПІ\Прога\3 курс\лаба 3\Restaurant" t="IncludeFlat">
+      <e p=".git\info\exclude" t="IncludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Restaurant.BLL" t="IncludeRecursive">
+        <e p=".gitignore" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Restaurant.BLL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Restaurant.BLL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Restaurant.DAL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entities" t="Include">
+          <e p="Dish.cs" t="Include" />
+          <e p="Ingredient.cs" t="Include" />
+          <e p="Order.cs" t="Include" />
+          <e p="Table.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="IRepository.cs" t="Include" />
+          <e p="IUnitOfWork.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Restaurant.DAL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Repositories" t="Include">
+          <e p="DishRepository.cs" t="Include" />
+          <e p="EUnitOfWork.cs" t="Include" />
+          <e p="IngredientRepository.cs" t="Include" />
+          <e p="OrderRepository.cs" t="Include" />
+          <e p="TableRepository.cs" t="Include" />
+        </e>
+        <e p="Restaurant.DAL.csproj" t="IncludeRecursive" />
+        <e p="Utilities" t="Include">
+          <e p="RestaurantContext.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Restaurant.PL" t="IncludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="Restaurant.PL.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Restaurant.PL.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Restaurant.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
