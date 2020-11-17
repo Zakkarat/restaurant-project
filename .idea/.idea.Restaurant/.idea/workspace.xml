@@ -15,32 +15,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bb797315-f575-4011-a4bf-e74ff3077f80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.BLL/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.BLL/Class1.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.BLL/Restaurant.BLL.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Entities/Dish.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Entities/Ingredient.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Entities/Order.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Entities/Table.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Interfaces/IRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Interfaces/IUnitOfWork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Repositories/DishRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Repositories/EUnitOfWork.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Repositories/IngredientRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Repositories/OrderRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Repositories/TableRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Restaurant.DAL.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.DAL/Utilities/RestaurantContext.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.PL/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.PL/Restaurant.PL.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Restaurant.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Restaurant/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant.BLL/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +36,29 @@
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1605624935" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1605624934" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/8148B425-429B-4EFB-A30C-D40D6DE08BBE/3F/SqlServerDatabaseCreator.cs" root0="SKIP_HIGHLIGHTING" />
@@ -168,7 +168,7 @@
       <workItem from="1605524252030" duration="72000" />
       <workItem from="1605596299340" duration="6363000" />
       <workItem from="1605623198096" duration="652000" />
-      <workItem from="1605623980671" duration="868000" />
+      <workItem from="1605623980671" duration="1237000" />
     </task>
     <servers />
   </component>
