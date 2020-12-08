@@ -14,6 +14,9 @@ namespace Restaurant.DAL.Repositories
         private OrderRepository _orderRepository;
         private TableRepository _tableRepository;
 
+        public EUnitOfWork(string connection)
+            => _db = new RestaurantContext(connection);
+        
         public IRepository<Dish> Dishes
         {
             get

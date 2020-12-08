@@ -5,20 +5,25 @@ namespace Restaurant.DAL.Utilities
 {
     public class RestaurantContext : DbContext
     {
+        private string _connection;
         public DbSet<Dish> Dishes { get; set; }
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Table> Tables { get; set; }
 
-        public RestaurantContext()
+        public RestaurantContext(string connection)
         {
-            Database.EnsureDeleted();
-            Database.EnsureCreated();
+            _connection = connection;
+            
+            //Database.EnsureDeleted();
+            
+            if(Database.EnsureCreated())
+                Initialize.Init(this);
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=(LocalDb)\LocalDBByshovets;Database=RestaurantDB;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer(_connection);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -27,7 +32,7 @@ namespace Restaurant.DAL.Utilities
                 .HasOne(p => p.Table)
                 .WithMany(t => t.Orders)
                 .OnDelete(DeleteBehavior.Cascade);
-            
+
             modelBuilder.Entity<Dish>()
                 .HasMany(p => p.Ingredients)
                 .WithMany(p => p.Dishes);
