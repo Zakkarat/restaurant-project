@@ -7,9 +7,9 @@ namespace Restaurant.BLL.Injections
 {
     public class ServiceModule
     {
-        public static IUnityContainer _container;
+        private static IUnityContainer _container;
 
-        public static IUnityContainer Container
+        private static IUnityContainer Container
         {
             get
             {

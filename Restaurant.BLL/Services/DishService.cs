@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using AutoMapper;
+using Restaurant.BLL.DTOobjects;
 using Restaurant.BLL.Interfaces;
 using Restaurant.BLL.Profiles;
 using Restaurant.DAL.Interfaces;
@@ -23,6 +25,15 @@ namespace Restaurant.BLL.Services
                 new MapperConfiguration(
                     cfg=>cfg
                         .AddProfile<DishProfile>()));
+        }
+        
+        public IEnumerable<DishDTO> GetAll()
+        {
+            var dishes = _mapper
+                .Map<IEnumerable<DishDTO>>(
+                    _db.Dishes.GetAll());
+            
+            return dishes;
         }
     }
 }

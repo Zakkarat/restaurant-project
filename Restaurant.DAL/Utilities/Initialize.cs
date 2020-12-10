@@ -23,13 +23,13 @@ namespace Restaurant.DAL.Utilities
                 }
             }
             ingredients = ingredients.Distinct().OrderBy(elem=>elem).ToList();
-            
+
             foreach(var ingredient in ingredients)
             {
                 context.Ingredients.Add(
                     new Ingredient
                     {
-                        Name = ingredient,
+                        Name = ingredient
                     });
                 context.SaveChanges();
             }
