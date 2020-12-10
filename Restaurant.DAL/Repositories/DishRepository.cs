@@ -23,10 +23,13 @@ namespace Restaurant.DAL.Repositories
                 .Include(i => i.Ingredients)
                 .Include(o => o.Orders);
         }
-
+        
         public Dish Get(int id)
         {
-            return _db.Dishes.Find(id);
+            return _db.Dishes
+                .Include(i=>i.Ingredients)
+                .Include(o=>o.Orders)
+                .Select(elem=>elem).Single(elem => elem.Id == id);
         }
 
         public void Create(Dish dish)

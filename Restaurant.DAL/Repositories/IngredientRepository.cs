@@ -19,8 +19,8 @@ namespace Restaurant.DAL.Repositories
 
         public IEnumerable<Ingredient> GetAll()
         {
-            return _db.Ingredients;
-            // .Include(d => d.Dishes);
+            return _db.Ingredients
+             .Include(d => d.Dishes);
         }
 
         public Ingredient Get(int id)

@@ -10,31 +10,17 @@ namespace Restaurant.BLL.Profiles
     {
         public DishProfile()
         {
-            
-            CreateMap<IngredientDTO, Ingredient>();
-            CreateMap<Ingredient, IngredientDTO>();
-
             CreateMap<Dish, DishDTO>()
-                .ForMember(dto => dto.Ingredients,
-                    opt =>
-                        opt.MapFrom(elem => elem.Ingredients.Select(e => e)));
-            CreateMap<Ingredient, DishDTO>();
-            // CreateMap<Ingredient, DishDTO>()
-            //     .ForMember(dto => dto.Ingredients,
-            //         opt => 
-            //             opt.MapFrom(s => s));
-            // CreateMap<DishDTO, Dish>();
-            // .ForMember(dto=>dto.Ingredients,
-            //     opt
-            //         => opt.MapFrom(s=>s.Ingredients
-            //             .Select(elem => elem.Name).ToList()));
-
-            // CreateMap<Dish, DishDTO>()
-            //     .ForMember(dto=>dto.Ingredients, 
-            //         opt=>
-            //             opt.Ignore());
-
-            // CreateMap<Ingredient, IngredientDTO>();
+                .ForMember(dto=>dto.Ingredients,
+                    opt
+                        => opt.MapFrom(e=>e.Ingredients
+                            .Select(s=>s.Name)))
+                .ForMember(dto=>dto.Orders,
+                    opt
+                        => opt.MapFrom(o=>o.Orders
+                            .Select(e=>e.Id)));
+            
+            CreateMap<DishDTO, Dish>();
         }
     }
 }

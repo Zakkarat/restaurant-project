@@ -5,33 +5,31 @@ using Microsoft.Extensions.Logging;
 using Restaurant.BLL.DTOobjects;
 using Restaurant.BLL.Interfaces;
 using Restaurant.BLL.Profiles;
-using Restaurant.BLL.Services;
 using Restaurant.DAL.Entities;
 
-namespace WebApplication.Controllers
+namespace ASP.NETCoreWebApplication.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class DishController : ControllerBase
+    public class IngredientController : ControllerBase
     {
-        private IDishService _service;
+        private IIngredientService _service;
         private Mapper _mapper;
 
-        private readonly ILogger<DishController> _logger;
+        private readonly ILogger<IngredientController> _logger;
 
-        public DishController(ILogger<DishController> logger, IDishService service)
+        public IngredientController(ILogger<IngredientController> logger, IIngredientService service)
         {
             _logger = logger;
             _service = service;
             _mapper = new Mapper(
                 new MapperConfiguration(cfg
-                    => cfg.AddProfile<DishProfile>()));
+                    => cfg.AddProfile<IngredientProfile>()));
         }
-
         [HttpGet]
-        public IEnumerable<DishDTO> Get()
+        public IEnumerable<IngredientDTO> Get()
         {
-            return (_mapper.Map<IEnumerable<DishDTO>>(_service.GetAll()));
+            return (_mapper.Map<IEnumerable<IngredientDTO>>(_service.GetAll()));
         }
     }
 }

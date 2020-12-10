@@ -15,7 +15,7 @@ namespace Restaurant.DAL.Utilities
         {
             _connection = connection;
             
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             
             if(Database.EnsureCreated())
                 Initialize.Init(this);

@@ -35,5 +35,12 @@ namespace Restaurant.BLL.Services
             
             return dishes;
         }
+        
+        public DishDTO Get(int id)
+        {
+            return _mapper.Map<DishDTO>
+                (_db.Dishes.Get(id));
+        }
+        
     }
 }

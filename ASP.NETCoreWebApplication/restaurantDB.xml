@@ -1,0 +1,1364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>onions</element>
+            <element>chilli</element>
+            <element>apricot</element>
+        </Ingredients>
+        <Name>Chilli and apricot loaf</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>pepper</element>
+            <element>tomato</element>
+        </Ingredients>
+        <Name>Pepper and tomato soup</Name>
+        <Price>10</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>raspberry</element>
+            <element>treacle</element>
+        </Ingredients>
+        <Name>Raspberry and treacle cupcakes</Name>
+        <Price>70</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>wensleydale</element>
+            <element>borscht</element>
+        </Ingredients>
+        <Name>Wensleydale and borscht salad</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>garlic</element>
+            <element>tofu</element>
+            <element>chickpea</element>
+            <element>cream</element>
+        </Ingredients>
+        <Name>Tofu and chickpea soup</Name>
+        <Price>170</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>black pepper</element>
+            <element>mustard seeds</element>
+            <element>cardamon</element>
+            <element>cinnamon</element>
+            <element>white wine vinegar</element>
+            <element>cayenne</element>
+            <element>mustard seed</element>
+            <element>aubergine</element>
+        </Ingredients>
+        <Name>Mustard seed and aubergine vindaloo</Name>
+        <Price>190</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>sugar</element>
+            <element>anchovy</element>
+            <element>apple</element>
+        </Ingredients>
+        <Name>Anchovy and apple bread</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>white cabbage</element>
+            <element>cucumber</element>
+            <element>lettuce</element>
+            <element>john dory</element>
+            <element>vermicelli</element>
+        </Ingredients>
+        <Name>John dory and vermicelli salad</Name>
+        <Price>60</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>falafel</element>
+            <element>turkey</element>
+        </Ingredients>
+        <Name>Falafel and turkey ciabatta</Name>
+        <Price>20</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>cardamom</element>
+            <element>raisin</element>
+        </Ingredients>
+        <Name>Cardamom and raisin muffins</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>red chilli</element>
+            <element>tomato</element>
+            <element>cauliflower</element>
+        </Ingredients>
+        <Name>Coriander and cauliflower madras</Name>
+        <Price>240</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>red chilli</element>
+            <element>tomato</element>
+            <element>goat</element>
+        </Ingredients>
+        <Name>Goat and tumeric madras</Name>
+        <Price>100</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>caraway</element>
+        </Ingredients>
+        <Name>Sugar and caraway cake</Name>
+        <Price>10</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>leek</element>
+            <element>cabbage</element>
+        </Ingredients>
+        <Name>Leek and cabbage gyoza</Name>
+        <Price>40</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>falafel</element>
+            <element>grappa</element>
+        </Ingredients>
+        <Name>Falafel and grappa salad</Name>
+        <Price>160</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>curry leaf</element>
+            <element>green chilli</element>
+            <element>black pepper</element>
+            <element>cod</element>
+        </Ingredients>
+        <Name>Black pepper and cod curry</Name>
+        <Price>180</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>lemon</element>
+            <element>hazelnut</element>
+        </Ingredients>
+        <Name>Lemon and hazelnut muffins</Name>
+        <Price>110</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>cheddar</element>
+            <element>chilli</element>
+        </Ingredients>
+        <Name>Cheddar and chilli toastie</Name>
+        <Price>60</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>chicken</element>
+            <element>tofu</element>
+        </Ingredients>
+        <Name>Chicken and tofu toastie</Name>
+        <Price>150</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>butter</element>
+            <element>sugar</element>
+            <element>cream</element>
+            <element>cod</element>
+        </Ingredients>
+        <Name>Cod and tumeric korma</Name>
+        <Price>80</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>snake</element>
+            <element>shellfish</element>
+        </Ingredients>
+        <Name>Snake and shellfish salad</Name>
+        <Price>140</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>orange</element>
+            <element>polenta</element>
+        </Ingredients>
+        <Name>Orange and polenta cookies</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>rosemary</element>
+            <element>apple</element>
+        </Ingredients>
+        <Name>Rosemary and apple cookies</Name>
+        <Price>100</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>onions</element>
+            <element>chilli</element>
+            <element>orange</element>
+        </Ingredients>
+        <Name>Chilli and orange bread</Name>
+        <Price>240</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>chamomile</element>
+            <element>arugula</element>
+        </Ingredients>
+        <Name>Chamomile and arugula salad</Name>
+        <Price>10</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>kipper</element>
+            <element>galliano</element>
+        </Ingredients>
+        <Name>Kipper and galliano salad</Name>
+        <Price>40</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>black pepper</element>
+            <element>mustard seeds</element>
+            <element>cardamon</element>
+            <element>cinnamon</element>
+            <element>white wine vinegar</element>
+            <element>cayenne</element>
+            <element>egg</element>
+            <element>pineapple</element>
+        </Ingredients>
+        <Name>Egg and pineapple vindaloo</Name>
+        <Price>170</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>chestnut</element>
+            <element>chervil</element>
+        </Ingredients>
+        <Name>Chestnut and chervil salad</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>pear</element>
+            <element>currant</element>
+        </Ingredients>
+        <Name>Pear and currant pudding</Name>
+        <Price>140</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>tomato</element>
+            <element>onion</element>
+            <element>garlic</element>
+            <element>pasta</element>
+            <element>oregano</element>
+            <element>black pepper</element>
+            <element>rocket</element>
+            <element>broccoli</element>
+        </Ingredients>
+        <Name>Rocket and broccoli fusilli</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>olive oil</element>
+            <element>onion</element>
+            <element>garlic</element>
+            <element>spring onions</element>
+            <element>rice</element>
+            <element>cumin</element>
+            <element>parmesan</element>
+            <element>chicken</element>
+            <element>crab</element>
+            <element>cream</element>
+        </Ingredients>
+        <Name>Chicken and crab risotto</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>mango</element>
+            <element>basil</element>
+        </Ingredients>
+        <Name>Mango and basil soup</Name>
+        <Price>190</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>garlic</element>
+            <element>mint</element>
+            <element>rice</element>
+        </Ingredients>
+        <Name>Mint and rice soup</Name>
+        <Price>100</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>stilton</element>
+            <element>hazelnut</element>
+        </Ingredients>
+        <Name>Stilton and hazelnut buns</Name>
+        <Price>250</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>cucumber</element>
+            <element>cress</element>
+            <element>tomato</element>
+            <element>matzo farfel</element>
+            <element>crab</element>
+        </Ingredients>
+        <Name>Matzo farfel and crab salad</Name>
+        <Price>260</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>cardamom</element>
+            <element>bacon</element>
+        </Ingredients>
+        <Name>Cardamom and bacon cupcakes</Name>
+        <Price>240</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>milk</element>
+            <element>blueberry</element>
+            <element>buckwheat</element>
+        </Ingredients>
+        <Name>Blueberry and buckwheat crepes</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>peppers</element>
+            <element>cayenne pepper</element>
+            <element>basil</element>
+        </Ingredients>
+        <Name>Cayenne pepper and basil stir fry</Name>
+        <Price>160</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>tahini</element>
+            <element>cucumber</element>
+        </Ingredients>
+        <Name>Tahini and cucumber panini</Name>
+        <Price>260</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>onions</element>
+            <element>mushroom</element>
+            <element>cardamom</element>
+        </Ingredients>
+        <Name>Mushroom and cardamom sausages</Name>
+        <Price>50</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>raspberry</element>
+            <element>polenta</element>
+        </Ingredients>
+        <Name>Raspberry and polenta muffins</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>milk</element>
+            <element>mustard</element>
+            <element>blackcurrant</element>
+        </Ingredients>
+        <Name>Mustard and blackcurrant crepes</Name>
+        <Price>280</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>milk</element>
+            <element>blueberry</element>
+            <element>hazelnut</element>
+        </Ingredients>
+        <Name>Blueberry and hazelnut pancake</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>blackberry</element>
+            <element>orange</element>
+        </Ingredients>
+        <Name>Blackberry and orange crumble</Name>
+        <Price>110</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>courgette</element>
+            <element>strawberry</element>
+        </Ingredients>
+        <Name>Courgette and strawberry muffins</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>tomato</element>
+            <element>onion</element>
+            <element>garlic</element>
+            <element>pasta</element>
+            <element>oregano</element>
+            <element>black pepper</element>
+            <element>avocado</element>
+            <element>lemon</element>
+        </Ingredients>
+        <Name>Avocado and lemon pasta</Name>
+        <Price>180</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>butter</element>
+            <element>sugar</element>
+            <element>cream</element>
+            <element>pineapple</element>
+            <element>coconut</element>
+        </Ingredients>
+        <Name>Pineapple and coconut korma</Name>
+        <Price>20</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>peach</element>
+            <element>rosemary</element>
+        </Ingredients>
+        <Name>Peach and rosemary cupcakes</Name>
+        <Price>20</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>cucumber</element>
+            <element>tomato</element>
+            <element>lettuce</element>
+            <element>rocket</element>
+            <element>beef heart</element>
+        </Ingredients>
+        <Name>Rocket and beef heart salad</Name>
+        <Price>230</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>egg</element>
+            <element>cream</element>
+            <element>sugar</element>
+            <element>vanilla</element>
+            <element>lemon</element>
+        </Ingredients>
+        <Name>Vanilla and lemon mousse</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>sugar</element>
+            <element>flaxseed</element>
+            <element>cardamom</element>
+        </Ingredients>
+        <Name>Flaxseed and cardamom loaf</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>milk</element>
+            <element>potato</element>
+            <element>spring onion</element>
+        </Ingredients>
+        <Name>Potato and spring onion fritters</Name>
+        <Price>170</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>onion</element>
+            <element>game</element>
+        </Ingredients>
+        <Name>Onion and game pie</Name>
+        <Price>80</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>cardamom</element>
+            <element>blueberry</element>
+        </Ingredients>
+        <Name>Cardamom and blueberry buns</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>red chilli</element>
+            <element>tomato</element>
+            <element>duck</element>
+            <element>egg</element>
+        </Ingredients>
+        <Name>Duck and egg madras</Name>
+        <Price>60</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>tomato</element>
+            <element>onion</element>
+            <element>garlic</element>
+            <element>pasta</element>
+            <element>oregano</element>
+            <element>black pepper</element>
+            <element>fregola</element>
+        </Ingredients>
+        <Name>Tomato and fregola fusilli</Name>
+        <Price>100</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>curry leaf</element>
+            <element>green chilli</element>
+            <element>chard</element>
+        </Ingredients>
+        <Name>Chard and tumeric curry</Name>
+        <Price>210</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>sugar</element>
+            <element>raspberry</element>
+            <element>banana</element>
+        </Ingredients>
+        <Name>Raspberry and banana bread</Name>
+        <Price>140</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>tomato</element>
+            <element>onion</element>
+            <element>garlic</element>
+            <element>pasta</element>
+            <element>oregano</element>
+            <element>black pepper</element>
+            <element>vermicelli</element>
+            <element>olive</element>
+        </Ingredients>
+        <Name>Vermicelli and olive fusilli</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>white cabbage</element>
+            <element>cress</element>
+            <element>tomato</element>
+            <element>soy</element>
+            <element>goji berry</element>
+        </Ingredients>
+        <Name>Soy and goji berry salad</Name>
+        <Price>300</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>kaffir lime leaf</element>
+            <element>mulberry</element>
+        </Ingredients>
+        <Name>Kaffir lime leaf and mulberry salad</Name>
+        <Price>190</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>pheasant</element>
+            <element>feta</element>
+        </Ingredients>
+        <Name>Pheasant and feta dumplings</Name>
+        <Price>180</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>mortadella</element>
+            <element>caramel sauce</element>
+        </Ingredients>
+        <Name>Mortadella and caramel sauce salad</Name>
+        <Price>300</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>salt</element>
+            <element>black pepper</element>
+            <element>potatoes</element>
+            <element>tempeh</element>
+            <element>steak</element>
+        </Ingredients>
+        <Name>Tempeh and steak casserole</Name>
+        <Price>60</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>sugar</element>
+            <element>vanilla</element>
+            <element>double cream</element>
+            <element>cream cheese</element>
+            <element>ricotta</element>
+            <element>cheese</element>
+        </Ingredients>
+        <Name>Ricotta and cheese cheesecake</Name>
+        <Price>160</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>soya milk</element>
+            <element>sugar</element>
+            <element>strawberry</element>
+            <element>saffron</element>
+        </Ingredients>
+        <Name>Strawberry and saffron yoghurt</Name>
+        <Price>300</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>burnet</element>
+            <element>gurnard</element>
+        </Ingredients>
+        <Name>Burnet and gurnard salad</Name>
+        <Price>260</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>tuna</element>
+            <element>sweetcorn</element>
+        </Ingredients>
+        <Name>Tuna and sweetcorn soup</Name>
+        <Price>50</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>red chilli</element>
+            <element>tomato</element>
+            <element>beef</element>
+            <element>mutton</element>
+        </Ingredients>
+        <Name>Beef and mutton madras</Name>
+        <Price>250</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>curry leaf</element>
+            <element>green chilli</element>
+            <element>anise</element>
+            <element>mushroom</element>
+        </Ingredients>
+        <Name>Anise and mushroom curry</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>rice</element>
+            <element>rice vinegar</element>
+            <element>sugar</element>
+            <element>avocado</element>
+            <element>cucumber</element>
+        </Ingredients>
+        <Name>Avocado and cucumber sushi</Name>
+        <Price>210</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>falafel</element>
+            <element>cucumber</element>
+        </Ingredients>
+        <Name>Falafel and cucumber toastie</Name>
+        <Price>200</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>pineapple</element>
+            <element>chilli</element>
+        </Ingredients>
+        <Name>Pineapple and chilli skewers</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>black pepper</element>
+            <element>mustard seeds</element>
+            <element>cardamon</element>
+            <element>cinnamon</element>
+            <element>white wine vinegar</element>
+            <element>cayenne</element>
+            <element>goat</element>
+            <element>mutton</element>
+        </Ingredients>
+        <Name>Goat and mutton vindaloo</Name>
+        <Price>230</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>rice</element>
+            <element>rice vinegar</element>
+            <element>sugar</element>
+            <element>tofu</element>
+            <element>avocado</element>
+        </Ingredients>
+        <Name>Tofu and avocado uramaki</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>persimmon</element>
+            <element>apple</element>
+        </Ingredients>
+        <Name>Persimmon and apple gyoza</Name>
+        <Price>100</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>black pepper</element>
+            <element>mustard seeds</element>
+            <element>cardamon</element>
+            <element>cinnamon</element>
+            <element>white wine vinegar</element>
+            <element>cayenne</element>
+            <element>coconut</element>
+            <element>lamb</element>
+        </Ingredients>
+        <Name>Coconut and lamb vindaloo</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>crayfish</element>
+            <element>tomato</element>
+        </Ingredients>
+        <Name>Crayfish and tomato salad</Name>
+        <Price>300</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>game</element>
+            <element>hazelnut</element>
+        </Ingredients>
+        <Name>Game and hazelnut salad</Name>
+        <Price>30</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>egg</element>
+            <element>jujube</element>
+        </Ingredients>
+        <Name>Egg and jujube salad</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>tomato</element>
+            <element>cress</element>
+            <element>corned beef</element>
+            <element>radish</element>
+        </Ingredients>
+        <Name>Corned beef and radish salad</Name>
+        <Price>180</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>kohlrabi</element>
+            <element>turkey</element>
+        </Ingredients>
+        <Name>Kohlrabi and turkey pie</Name>
+        <Price>260</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>salt</element>
+            <element>yeast</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>sugar</element>
+            <element>weetabix</element>
+            <element>sultana</element>
+        </Ingredients>
+        <Name>Weetabix and sultana bread</Name>
+        <Price>150</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>kalnji</element>
+            <element>blueberry</element>
+        </Ingredients>
+        <Name>Kalnji and blueberry salad</Name>
+        <Price>40</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>halloumi</element>
+            <element>rambutan</element>
+        </Ingredients>
+        <Name>Halloumi and rambutan salad</Name>
+        <Price>190</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>fish</element>
+            <element>steak</element>
+        </Ingredients>
+        <Name>Fish and steak toastie</Name>
+        <Price>290</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>scallop</element>
+            <element>ricotta</element>
+        </Ingredients>
+        <Name>Scallop and ricotta parcels</Name>
+        <Price>280</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>polenta</element>
+            <element>chicken</element>
+        </Ingredients>
+        <Name>Polenta and chicken pie</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>onions</element>
+            <element>crab</element>
+            <element>celeriac</element>
+        </Ingredients>
+        <Name>Crab and celeriac parcels</Name>
+        <Price>260</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>orange</element>
+            <element>bran</element>
+        </Ingredients>
+        <Name>Orange and bran cupcakes</Name>
+        <Price>50</Price>
+    </element>
+    <element>
+        <CookingTime>50</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>white cabbage</element>
+            <element>cucumber</element>
+            <element>yam</element>
+            <element>tongue</element>
+        </Ingredients>
+        <Name>Yam and tongue salad</Name>
+        <Price>160</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>tangerine</element>
+            <element>vanilla</element>
+        </Ingredients>
+        <Name>Tangerine and vanilla jam</Name>
+        <Price>110</Price>
+    </element>
+    <element>
+        <CookingTime>60</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>yeast</element>
+            <element>water</element>
+            <element>salt</element>
+            <element>sugar</element>
+            <element>oil</element>
+            <element>cheese</element>
+            <element>honey</element>
+        </Ingredients>
+        <Name>Honey and cheese pizza</Name>
+        <Price>250</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>sugar</element>
+            <element>lemon</element>
+            <element>courgette</element>
+        </Ingredients>
+        <Name>Lemon and courgette buns</Name>
+        <Price>250</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>butter</element>
+            <element>sugar</element>
+            <element>cream</element>
+            <element>spinach</element>
+            <element>chickpea</element>
+        </Ingredients>
+        <Name>Spinach and chickpea korma</Name>
+        <Price>220</Price>
+    </element>
+    <element>
+        <CookingTime>20</CookingTime>
+        <Ingredients>
+            <element>onion</element>
+            <element>peppers</element>
+            <element>garlic</element>
+            <element>ginger</element>
+            <element>tumeric</element>
+            <element>cumin</element>
+            <element>coriander</element>
+            <element>red chilli</element>
+            <element>tomato</element>
+            <element>anise</element>
+            <element>chard</element>
+        </Ingredients>
+        <Name>Anise and chard madras</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>40</CookingTime>
+        <Ingredients>
+            <element>rice</element>
+            <element>rice vinegar</element>
+            <element>sugar</element>
+            <element>salmon</element>
+            <element>cucumber</element>
+        </Ingredients>
+        <Name>Salmon and cucumber uramaki</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>cucumber</element>
+            <element>cress</element>
+            <element>lettuce</element>
+            <element>cham</element>
+            <element>squirrel</element>
+        </Ingredients>
+        <Name>Cham and squirrel salad</Name>
+        <Price>140</Price>
+    </element>
+    <element>
+        <CookingTime>10</CookingTime>
+        <Ingredients>
+            <element>flour</element>
+            <element>butter</element>
+            <element>egg</element>
+            <element>milk</element>
+            <element>paprika</element>
+            <element>sweetcorn</element>
+        </Ingredients>
+        <Name>Paprika and sweetcorn fritters</Name>
+        <Price>120</Price>
+    </element>
+    <element>
+        <CookingTime>30</CookingTime>
+        <Ingredients>
+            <element>lettuce</element>
+            <element>brisket</element>
+            <element>apple</element>
+        </Ingredients>
+        <Name>Brisket and apple salad</Name>
+        <Price>110</Price>
+    </element>
+</items>

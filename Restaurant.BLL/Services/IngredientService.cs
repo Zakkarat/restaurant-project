@@ -35,5 +35,14 @@ namespace Restaurant.BLL.Services
             
             return ingredients;
         }
+        
+        public IEnumerable<IngredientDTO> Add()
+        {
+            var ingredients = _mapper
+                .Map<IEnumerable<IngredientDTO>>(
+                    _db.Ingredients.GetAll());
+            
+            return ingredients;
+        }
     }
 }

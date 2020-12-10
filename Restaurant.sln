@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Restaurant.BLL", "Restauran
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{16C45284-F924-4EA8-AFFE-48F9BF3932B9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NETCoreWebApplication", "ASP.NETCoreWebApplication\ASP.NETCoreWebApplication.csproj", "{2096752E-CAD6-4524-B5D1-DBDEE0778859}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{16C45284-F924-4EA8-AFFE-48F9BF3932B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16C45284-F924-4EA8-AFFE-48F9BF3932B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16C45284-F924-4EA8-AFFE-48F9BF3932B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2096752E-CAD6-4524-B5D1-DBDEE0778859}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2096752E-CAD6-4524-B5D1-DBDEE0778859}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2096752E-CAD6-4524-B5D1-DBDEE0778859}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2096752E-CAD6-4524-B5D1-DBDEE0778859}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

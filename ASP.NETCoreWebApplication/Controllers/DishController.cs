@@ -1,14 +1,13 @@
 using System.Collections.Generic;
+using ASP.NETCoreWebApplication.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Restaurant.BLL.DTOobjects;
 using Restaurant.BLL.Interfaces;
 using Restaurant.BLL.Profiles;
-using Restaurant.BLL.Services;
-using Restaurant.DAL.Entities;
 
-namespace WebApplication.Controllers
+namespace ASP.NETCoreWebApplication.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -29,9 +28,15 @@ namespace WebApplication.Controllers
         }
 
         [HttpGet]
-        public IEnumerable<DishDTO> Get()
+        public IEnumerable<DishDTO> GetAll()
         {
             return (_mapper.Map<IEnumerable<DishDTO>>(_service.GetAll()));
+        }
+        
+        [HttpGet("{id}")]
+        public DishDTO Get(int id)
+        {
+            return (_mapper.Map<DishDTO>(_service.Get(id)));
         }
     }
 }
