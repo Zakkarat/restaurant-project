@@ -25,9 +25,10 @@ namespace Restaurant.DAL.Repositories
 
         public Ingredient Get(int id)
         {
-            return _db.Ingredients.Find(id);
+            return _db.Ingredients
+                .Include(i=>i.Dishes)
+                .Select(elem=>elem).Single(elem => elem.Id == id);
         }
-
         public void Create(Ingredient ingredient)
         {
             _db.Ingredients.Add(ingredient);

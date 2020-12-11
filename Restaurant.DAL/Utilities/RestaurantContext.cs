@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Restaurant.DAL.Entities;
 
 namespace Restaurant.DAL.Utilities
@@ -15,7 +16,7 @@ namespace Restaurant.DAL.Utilities
         {
             _connection = connection;
             
-            //Database.EnsureDeleted();
+            // Database.EnsureDeleted();
             
             if(Database.EnsureCreated())
                 Initialize.Init(this);

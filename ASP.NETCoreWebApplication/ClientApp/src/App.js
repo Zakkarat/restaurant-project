@@ -8,6 +8,7 @@ import { Counter } from './components/Counter';
 import './custom.css'
 import {FetchDish} from "./components/FetchDish";
 import {FetchIngredient} from "./components/FetchIngredient";
+import FetchIngredientId from "./components/FetchIngredientId";
 
 export default class App extends Component {
   static displayName = App.name;
@@ -20,6 +21,7 @@ export default class App extends Component {
         <Route path='/fetch-data' component={FetchData} />
         <Route path='/fetch-dish/:id' component={FetchDish} />
         <Route path='/fetch-ingredient' component={FetchIngredient} />
+        <Route path='/fetch-ingredient-id/:id' component={FetchIngredientId} />
       </Layout>
     );
   }
