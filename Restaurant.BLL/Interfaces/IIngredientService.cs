@@ -8,7 +8,7 @@ namespace Restaurant.BLL.Interfaces
     {
         public IEnumerable<IngredientDTO> GetAll();
         public void Add(string ingredient);
-        public void Update(IngredientDTO ingredient);
+        public void Update(int oldIngredient, string newIngredient);
         public void Delete(string ingredient);
     }
 }

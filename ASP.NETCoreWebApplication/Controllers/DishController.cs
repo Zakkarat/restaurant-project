@@ -38,5 +38,10 @@ namespace ASP.NETCoreWebApplication.Controllers
         {
             return (_mapper.Map<DishDTO>(_service.Get(id)));
         }
+        // [HttpPost]
+        // public DishDTO Add(string ingredient)
+        // {
+        //     _service.Add(ingredient);
+        // }
     }
 }

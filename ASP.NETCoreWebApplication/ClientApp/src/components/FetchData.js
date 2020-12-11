@@ -12,7 +12,7 @@ class FetchData extends Component {
   componentDidMount() {
     this.Menu();
   }
-
+  
   static renderMenu(dishes) {
     return (
       <table className='table table-striped' aria-labelledby="tabelLabel">

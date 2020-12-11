@@ -50,9 +50,14 @@ namespace Restaurant.BLL.Services
             }
         }
 
-        public void Update(IngredientDTO ingredient)
+        public void Update(int oldIngredient, string newIngredient)
         {
-            _db.Ingredients.Update(_mapper.Map<Ingredient>(ingredient));
+            Ingredient ingr = _db.Ingredients.GetAll()
+                .Single(elem => elem.Id == oldIngredient);
+
+            ingr.Name = newIngredient;
+            
+            _db.Ingredients.Update(_mapper.Map<Ingredient>(ingr));
             _db.Save();
         }
         

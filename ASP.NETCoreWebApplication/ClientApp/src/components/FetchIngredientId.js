@@ -7,7 +7,7 @@ class FetchIngredientId extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { ingredient: {}, id: -1, loading: true, isRedirect: false };
+        this.state = { ingredient: {}, id: -1, loading: true, isRedirect: false, isEdit: false, newIngredient: "", ingredients: [] };
     }
 
     async initId(){
@@ -28,6 +28,32 @@ class FetchIngredientId extends Component {
             });
         this.setState(state => ({...state, isRedirect: true}))
     }
+
+    handleEdit(){
+        this.setState(state => ({...state, isEdit: !state.isEdit}));
+    }
+
+    handleEditChange({target}){
+        this.setState(state => ({...state, newIngredient: target.value}));
+    }
+    
+    async handleApiEdit(){
+        if (this.state.ingredients.some((elem) => elem.name === this.state.newIngredient) ||
+            this.state.newIngredient === '') {
+            this.setState(state => ({...state, isError: true}))
+            return
+        }
+        this.setState(state => ({...state, isError: false}))
+        await fetch(`https://localhost:3001/Ingredient/edit?oldIngredient=${this.state.id}&newIngredient=${this.state.newIngredient}`,
+            {
+                method: "POST"
+            });
+        this.setState(state => ({...state, loading: true}))
+        const response = await fetch('ingredient');
+        const data = await response.json();
+        const data2 = data.filter(elem => elem.id === +this.state.id)[0];
+        this.setState(state => ({...state, ingredient:data2, ingredients:data, loading:false,  newIngredient: "", isEdit:false}));
+    }
     
     render() {
         return (
@@ -37,7 +63,7 @@ class FetchIngredientId extends Component {
                         <span className="font-weight-normal">Ingredient name:</span> {this.state.ingredient.name}.</h1>
                     <Row className="justify-content-center align-items-center mx-auto mt-3">
                         <Col xs={6}>
-                            <Button variant="outline-success" block>
+                            <Button variant="outline-success" block onClick={() => this.handleEdit()}>
                                 Edit ingredient
                             </Button>
                         </Col>
@@ -48,6 +74,24 @@ class FetchIngredientId extends Component {
                             </Button>
                         </Col>
                     </Row>
+                    {this.state.isEdit &&
+                    <>
+                        <InputGroup className="mt-3 w-75 mx-auto">
+                            <FormControl value={this.state.newIngredient}
+                                         onChange={(e) => this.handleEditChange(e)}
+                                         placeholder="Start entering.."
+                                         aria-label="Recipient's username"
+                                         aria-describedby="basic-addon2"
+                            />
+                            <InputGroup.Append>
+                                <Button variant="outline-info" onClick={() => this.handleApiEdit()}>Edit</Button>
+                            </InputGroup.Append>
+                        </InputGroup>
+                        {this.state.isError &&
+                        <p style={{textAlign: "center", color: "red"}}
+                           className="font-weight-bold">Something went wrong: try to enter another value.</p>}
+                    </>
+                    }
                 </div>
             </div>
         );
@@ -58,9 +102,9 @@ class FetchIngredientId extends Component {
             id: this.props.location.pathname.split('/')[2]});
 
         const response = await fetch(`ingredient`);
-        let data = await response.json();
-        data = data.filter(elem => elem.id === +this.state.id)[0];
-        await this.setState({ ingredient: data, loading: false });
+        const data = await response.json();
+        const data2 = data.filter(elem => elem.id === +this.state.id)[0];
+        await this.setState(state => ({...state, ingredient: data2, loading: false }));
 
         console.log(this.state);
     }

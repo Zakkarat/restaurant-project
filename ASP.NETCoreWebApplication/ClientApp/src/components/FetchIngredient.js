@@ -8,7 +8,6 @@ export class FetchIngredient extends Component {
     constructor(props) {
         super(props);
         this.state = { ingredients: [], loading: true, search: "", isAdd: false, newIngredient: "", isError: false };
-        // this.handleChange.bind(this);
     }
 
     componentDidMount() {
