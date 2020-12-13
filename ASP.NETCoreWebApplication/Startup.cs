@@ -37,6 +37,7 @@ namespace ASP.NETCoreWebApplication
             
             services.AddIngredientService(connectionString);
             services.AddDishService(connectionString);
+            services.AddOrderService(connectionString);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

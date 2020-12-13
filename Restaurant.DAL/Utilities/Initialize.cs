@@ -80,7 +80,8 @@ namespace Restaurant.DAL.Utilities
                     new Order
                     {
                         TableId = random.Next(1, 25),
-                        Dishes = orderedDishes
+                        Dishes = orderedDishes,
+                        Discount = 0
                     });
                 context.SaveChanges();
             }

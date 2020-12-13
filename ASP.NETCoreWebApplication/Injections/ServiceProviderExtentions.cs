@@ -14,5 +14,9 @@ namespace ASP.NETCoreWebApplication.Injections
         public static void AddDishService(this IServiceCollection services, string connection)
             => services.AddTransient<IDishService, IDishService>(obj
                 => ServiceModule.Init<DishService>(connection));
+
+        public static void AddOrderService(this IServiceCollection services, string connection)
+            => services.AddTransient<IOrderService, IOrderService>(obj
+                => ServiceModule.Init<OrderService>(connection));
     }
 }

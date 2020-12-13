@@ -6,8 +6,8 @@ namespace Restaurant.DAL
     public class Order
     {
         public int Id { get; set; }
-        //public int Number { get; set; }
         public int TableId { get; set; }
+        public int Discount { get; set; }
         public Table Table { get; set; }
         public List<Dish> Dishes { get; set; }
     }
