@@ -38,10 +38,35 @@ namespace ASP.NETCoreWebApplication.Controllers
         {
             return (_mapper.Map<DishDTO>(_service.Get(id)));
         }
-        // [HttpPost]
-        // public DishDTO Add(string ingredient)
-        // {
-        //     _service.Add(ingredient);
-        // }
+
+        [HttpPost("addIngredient")]
+        public void AddIngredient(int dishId, string ingredient)
+        {
+            _service.AddIngredient(dishId, ingredient);
+        }
+        
+        [HttpPost("deleteIngredient")]
+        public void DeleteIngredient(int dishId, string ingredient)
+        {
+            _service.DeleteIngredient(dishId, ingredient);
+        }
+        
+        [HttpPost("deleteDish")]
+        public void Delete(int dishId)
+        {
+            _service.Delete(dishId);
+        }
+        
+        [HttpPost("addDish")]
+        public void AddIDish(string name, int cookingTime, int price)
+        {
+            _service.AddDish(name, cookingTime, price);
+        }
+
+        [HttpPost("editDish")]
+        public void EditDish(int dishId, string name, int cookingTime, int price)
+        {
+            _service.EditDish(dishId, name, cookingTime, price);
+        }
     }
 }

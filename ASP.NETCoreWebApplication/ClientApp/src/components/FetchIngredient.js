@@ -7,7 +7,8 @@ export class FetchIngredient extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { ingredients: [], loading: true, search: "", isAdd: false, newIngredient: "", isError: false };
+        this.state = { ingredients: [], loading: true, search: "", 
+            isAdd: false, newIngredient: "", isError: false};
     }
 
     componentDidMount() {
@@ -85,34 +86,38 @@ export class FetchIngredient extends Component {
                           className="font-weight-bold">Something went wrong: try to enter another value.</p>}
                 </>
                 }
-            <table className='table table-striped w-25 mx-auto' aria-labelledby="tabelLabel">
-                <thead>
-                <tr>
-                    <th>№</th>
-                    <th>Name</th>
-                </tr>
-                </thead>
-                <tbody>
-                {
-                    ingredients.sort((a, b) =>
-                    {
-                        if(a.name < b.name) { return -1; }
-                        if(a.name > b.name) { return 1; }
-                        return 0;
-                    }
-                ).filter(ingredients => {
-                    const regex = new RegExp(`\\b${this.state.search}`,"gi");
-                    return ingredients.name.match(regex)
-                })
-                    .map((ingredients, i) =>
-                    <tr key={ingredients.id}>
-                        <td>{i + 1}</td>
-                        <td><Link to={`fetch-ingredient-id/${ingredients.id}`}>{ingredients.name}</Link></td>
+                <table className='table table-striped w-25 mx-auto' aria-labelledby="tabelLabel">
+                    <thead>
+                    <tr>
+                        <th>№</th>
+                        <th>Name</th>
                     </tr>
-                )}
-                </tbody>
-            </table>
-        </>
+                    </thead>
+                    <tbody>
+                    {
+                        ingredients.sort((a, b) => {
+                                if (a.name < b.name) {
+                                    return -1;
+                                }
+                                if (a.name > b.name) {
+                                    return 1;
+                                }
+                                return 0;
+                            }
+                        ).filter(ingredients => {
+                            const regex = new RegExp(`\\b${this.state.search}`, "gi");
+                            return ingredients.name.match(regex)
+                        })
+                            .map((ingredients, i) =>
+                                <tr key={ingredients.id}>
+                                    <td>{i + 1}</td>
+                                    <td><Link to={`fetch-ingredient-id/${ingredients.id}`}>{ingredients.name}</Link>
+                                    </td>
+                                </tr>
+                            )}
+                    </tbody>
+                </table>
+            </>
         );
     }
 
