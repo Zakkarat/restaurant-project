@@ -27,9 +27,45 @@ namespace ASP.NETCoreWebApplication.Controllers
                     => cfg.AddProfile<OrderProfile>()));
         }
         [HttpGet]
-        public IEnumerable<OrderDTO> Get()
+        public IEnumerable<OrderDTO> GetAll()
         {
             return (_mapper.Map<IEnumerable<OrderDTO>>(_service.GetAll()));
+        }
+        
+        [HttpGet("{id}")]
+        public OrderDTO Get(int id)
+        {
+            return (_mapper.Map<OrderDTO>(_service.Get(id)));
+        }
+        
+        [HttpPost("addOrder")]
+        public void AddOrder(int tableId)
+        {
+            _service.AddOrder(tableId);
+        }
+        
+        [HttpPost("deleteOrder")]
+        public void DeleteOrder(int orderId)
+        {
+            _service.DeleteOrder(orderId);
+        }
+        
+        [HttpPost("addDish")]
+        public void AddDish(int orderId, string dish)
+        {
+            _service.AddDish(orderId, dish);
+        }
+        
+        [HttpPost("deleteDish")]
+        public void DeleteDish(int orderId, string dish)
+        {
+            _service.DeleteDish(orderId, dish);
+        }
+        
+        [HttpPost("editOrder")]
+        public void EditOrder(int orderId, int tableId, int discount)
+        {
+            _service.EditOrder(orderId, tableId, discount);
         }
     }
     

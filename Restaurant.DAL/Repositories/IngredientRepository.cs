@@ -45,13 +45,5 @@ namespace Restaurant.DAL.Repositories
             if (ingredient != null)
                 _db.Ingredients.Remove(ingredient);
         }
-
-        /*public IEnumerable<Ingredient> Find(Func<Ingredient, bool> predicate)
-        {
-            return _db.Ingredients
-                .Include(o => o.Dishes)
-                .Where(predicate)
-                .ToList();
-        }*/
     }
 }

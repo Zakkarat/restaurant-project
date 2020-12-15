@@ -10,6 +10,6 @@ namespace Restaurant.BLL.DTOobjects
         public int Discount { get; set; }
         
         public int Table { get; set; }
-        public IEnumerable<Tuple<string, int, int>> Dishes { get; set; }
+        public IEnumerable<Tuple<string, int, int, int>> Dishes { get; set; }
     }
 }

@@ -63,13 +63,13 @@ class FetchIngredientId extends Component {
                         <span className="font-weight-normal">Ingredient name:</span> {this.state.ingredient.name}.</h1>
                     <Row className="justify-content-center align-items-center mx-auto mt-3">
                         <Col xs={6}>
-                            <Button variant="outline-success" block onClick={() => this.handleEdit()}>
+                            <Button variant="success" block onClick={() => this.handleEdit()}>
                                 Edit ingredient
                             </Button>
                         </Col>
                         {this.state.isRedirect&&<Redirect to="/fetch-ingredient"/>}
                         <Col xs={6}>
-                            <Button variant="outline-danger" block onClick={()=>this.handleDelete()}>
+                            <Button variant="danger" block onClick={()=>this.handleDelete()}>
                                 Remove ingredient
                             </Button>
                         </Col>

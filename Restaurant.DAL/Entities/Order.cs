@@ -10,5 +10,7 @@ namespace Restaurant.DAL
         public int Discount { get; set; }
         public Table Table { get; set; }
         public List<Dish> Dishes { get; set; }
+        public List<DishOrder> DishOrders { get; set; }
+
     }
 }

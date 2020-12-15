@@ -48,8 +48,8 @@ export class FetchIngredient extends Component {
         return (
             <>
             <Row className="justify-content-center align-items-center mx-auto mt-3 w-50">
-                <Col>
-                    <InputGroup className="mb-3">
+                <Col className="mb-3 pl-0 pr-md-2">
+                    <InputGroup>
                     <InputGroup.Prepend>
                         <InputGroup.Text id="inputGroup-sizing-default">Search</InputGroup.Text>
                     </InputGroup.Prepend>
@@ -61,7 +61,7 @@ export class FetchIngredient extends Component {
                     />
                     </InputGroup>
                 </Col>
-                <Col className="mb-3" xs={5}>
+                <Col className="mb-3 pr-0 pl-md-2" xs={5}>
                     <Button variant="success" block
                             onClick = {this.handleClick.bind(this)}>
                         Add ingredient

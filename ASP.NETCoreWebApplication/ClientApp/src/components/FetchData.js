@@ -94,7 +94,7 @@ class FetchData extends Component {
       <div>
         <h1 style={{textAlign:"center"}} id="tabelLabel" >Restaurant Menu</h1>
         <Row className="justify-content-center align-items-center mx-auto mt-3 w-50 mb-3">
-          <Col  className="pl-0 pr-md-3">
+          <Col className="pl-0 pr-md-2">
             <InputGroup>
               <InputGroup.Prepend>
                 <InputGroup.Text id="inputGroup-sizing-default">Search</InputGroup.Text>
@@ -108,7 +108,7 @@ class FetchData extends Component {
             </InputGroup>
           </Col>
 
-          <Col className="pl-0 pr-md-3" xs={4}>
+          <Col className="pr-0 pl-md-2" xs={4}>
             <Button variant="outline-info" block onClick = {()=>this.handleClick()}>
               Add dish
             </Button>

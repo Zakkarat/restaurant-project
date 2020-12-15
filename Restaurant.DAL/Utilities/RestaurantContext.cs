@@ -11,13 +11,11 @@ namespace Restaurant.DAL.Utilities
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Table> Tables { get; set; }
-
         public RestaurantContext(string connection)
         {
             _connection = connection;
             
-            // Database.EnsureDeleted();
-            
+            //Database.EnsureDeleted();
             if(Database.EnsureCreated())
                 Initialize.Init(this);
         }
@@ -33,14 +31,29 @@ namespace Restaurant.DAL.Utilities
                 .HasOne(p => p.Table)
                 .WithMany(t => t.Orders)
                 .OnDelete(DeleteBehavior.Cascade);
-
+            
             modelBuilder.Entity<Dish>()
                 .HasMany(p => p.Ingredients)
                 .WithMany(p => p.Dishes);
-
+            
             modelBuilder.Entity<Dish>()
                 .HasMany(p => p.Orders)
-                .WithMany(t => t.Dishes);
+                .WithMany(t => t.Dishes)
+                .UsingEntity<DishOrder>(
+                    j => j
+                        .HasOne(od => od.Order)
+                        .WithMany(od => od.DishOrders)
+                        .HasForeignKey(od => od.OrdersId),
+                    j => j
+                        .HasOne(od => od.Dish)
+                        .WithMany(od => od.DishOrders)
+                        .HasForeignKey(od => od.DishesId),
+                    j =>
+                    {
+                        j.Property(od => od.Amount).HasDefaultValueSql("1");
+                        j.HasKey(o => new {o.DishesId, o.OrdersId});
+                    }
+                );
         }
     }
 }

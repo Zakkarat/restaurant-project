@@ -44,13 +44,5 @@ namespace Restaurant.DAL.Repositories
             if (table != null)
                 _db.Tables.Remove(table);
         }
-
-        /*public IEnumerable<Table> Find(Func<Table, bool> predicate)
-        {
-            return _db.Tables
-                .Include(o => o.Orders)
-                .Where(predicate)
-                .ToList();
-        }*/
     }
 }

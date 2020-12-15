@@ -154,17 +154,17 @@ export class FetchDish extends Component {
                     <span style={{fontWeight:"bold"}}>Price: </span> 
                     {this.state.dish.price}</p>
                 <Row className="w-50 mb-3 mx-auto">
-                <Col className="pl-0 pr-md-2">
-                    <Button variant="outline-info" block  onClick={() => this.handleClickEdit()}>
-                        Edit dish
-                    </Button>
-                </Col>
-                    {this.state.isRedirect && <Redirect to="/fetch-data"/>}
-                <Col className="pr-0 pl-md-2">
-                    <Button variant="outline-danger" block onClick={()=>this.handleDeleteDish()}>
-                        Delete dish
-                    </Button>
-                </Col>
+                    <Col className="pl-0 pr-md-2">
+                        <Button variant="outline-info" block  onClick={() => this.handleClickEdit()}>
+                            Edit dish
+                        </Button>
+                    </Col>
+                        {this.state.isRedirect && <Redirect to="/fetch-data"/>}
+                    <Col className="pr-0 pl-md-2">
+                        <Button variant="outline-danger" block onClick={()=>this.handleDeleteDish()}>
+                            Delete dish
+                        </Button>
+                    </Col>
                 </Row>
                 {this.state.isEdit ?
                 <>

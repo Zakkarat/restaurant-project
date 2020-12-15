@@ -25,7 +25,10 @@ namespace Restaurant.DAL.Repositories
 
         public Order Get(int id)
         {
-            return _db.Orders.Find(id);
+            return _db.Orders
+                .Include(d => d.Dishes)
+                .Include(t => t.Table)
+                .Select(elem=>elem).Single(elem => elem.Id == id);
         }
 
         public void Create(Order order)
@@ -44,15 +47,5 @@ namespace Restaurant.DAL.Repositories
             if (order != null)
                 _db.Orders.Remove(order);
         }
-
-        /*public IEnumerable<Order> Find(Func<Order, bool> predicate)
-        {
-            return _db.Orders
-                .Include(o => o.Dishes)
-                .Include(o=>o.Table)
-                .Where(predicate)
-                .ToList();
-        }*/
-        
     }
 }

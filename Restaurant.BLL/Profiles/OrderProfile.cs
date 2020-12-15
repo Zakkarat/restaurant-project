@@ -19,9 +19,12 @@ namespace Restaurant.BLL.Profiles
                         => opt.MapFrom(t => t.Table.Id))
                 .ForMember(d => d.Dishes,
                     opt =>
-                        opt.MapFrom(order => order.Dishes.Select(dish => 
-                            new Tuple<string, int, int>(dish.Name, dish.CookingTime, dish.Price))));
-            
+                        opt.MapFrom(order => order.Dishes
+                            .Select(dish => new Tuple<string, int, int, int>
+                                (dish.Name, dish.CookingTime, dish.Price, dish.DishOrders
+                                    .Single(od => od.Dish.Equals(dish) 
+                                                  && od.Order.Equals(order)).Amount)
+                        )));
         }
     }
 }

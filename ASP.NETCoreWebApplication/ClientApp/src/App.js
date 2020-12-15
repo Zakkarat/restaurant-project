@@ -9,6 +9,8 @@ import './custom.css'
 import {FetchDish} from "./components/FetchDish";
 import {FetchIngredient} from "./components/FetchIngredient";
 import FetchIngredientId from "./components/FetchIngredientId";
+import {FetchOrder} from './components/FetchOrder';
+import FetchOrderId from "./components/FetchOrderId";
 
 export default class App extends Component {
   static displayName = App.name;
@@ -22,6 +24,8 @@ export default class App extends Component {
         <Route path='/fetch-dish/:id' component={FetchDish} />
         <Route path='/fetch-ingredient' component={FetchIngredient} />
         <Route path='/fetch-ingredient-id/:id' component={FetchIngredientId} />
+        <Route path='/fetch-order' component={FetchOrder} />
+        {<Route path='/fetch-order-id/:id' component={FetchOrderId} />}
       </Layout>
     );
   }
