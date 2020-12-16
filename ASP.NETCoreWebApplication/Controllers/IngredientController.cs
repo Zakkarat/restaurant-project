@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 using Restaurant.BLL.DTOobjects;
 using Restaurant.BLL.Interfaces;
 using Restaurant.BLL.Profiles;
-using Restaurant.DAL.Entities;
 
 namespace ASP.NETCoreWebApplication.Controllers
 {

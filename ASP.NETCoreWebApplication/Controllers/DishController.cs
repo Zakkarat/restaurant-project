@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using ASP.NETCoreWebApplication.Models;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

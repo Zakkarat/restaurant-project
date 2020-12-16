@@ -89,12 +89,12 @@ export class FetchOrderId extends Component {
     }
     //
     async handleSubmit() {
-        if (this.state.newOrder.table < 1 || this.state.newOrder.table > 25 || !+this.state.newOrder.discount) {
+        if (this.state.newOrder.table < 1 || this.state.newOrder.table > 25) {
             this.setState(state => ({...state, isEditError: true}))
             return;
         }
         this.setState(state => ({...state, isEditError: false}))
-        await fetch(`Order/editOrder?orderId=${this.state.id}&tableId=${this.state.newOrder.table}&discount=${this.state.newOrder.discount}`,
+        await fetch(`Order/editOrder?orderId=${this.state.id}&tableId=${this.state.newOrder.table}&discount=${this.state.newOrder.discount ? this.state.newOrder.discount : 0}`,
             {
                 method: "POST"
             });
