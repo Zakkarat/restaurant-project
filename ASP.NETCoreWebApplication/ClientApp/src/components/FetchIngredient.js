@@ -24,8 +24,8 @@ export class FetchIngredient extends Component {
     }
  
     async handleAdd() {
-        if (this.state.ingredients.some((elem) => elem.name === this.state.newIngredient) || 
-        this.state.newIngredient === '') {
+        if (this.state.ingredients.some((elem) => elem.name === this.state.newIngredient ||
+            !Number.isNaN(+this.state.newIngredient) || this.state.newIngredient === '')) {
             this.setState(state => ({...state, isError: true}))
             return
         }

@@ -44,25 +44,15 @@ export class FetchOrderId extends Component {
     handleAddChange({target}) {
         this.setState(state => ({...state, newDish: target.value}));
     }
-
-
-    //
-    // handleClickDelete() {
-    //     this.setState(state => ({...state, action: state.action === "Delete" ? "" : "Delete"}));
-    // }
-    //
-    // handleAddChange({target}) {
-    //     this.setState(state => ({...state, newIngredient: target.value}));
-    // }
-    //
+    
     handleEditChange({target}) {
         const newOrder = this.state.newOrder;
         newOrder[target.ariaLabel] = target.value
         this.setState(state => ({...state, newOrder: newOrder}));
     }
-    //
+    
     async handleAdd() {
-        if (this.state.newDish === '') {
+        if (this.state.newDish === '' || !Number.isNaN(+this.state.newDish)) {
             this.setState(state => ({...state, isError: true}))
             return
         }
@@ -75,10 +65,10 @@ export class FetchOrderId extends Component {
             await this.reload()
         }
     }
-    //
+    
     async handleDelete() {
         if (this.state.order.dishes.some((elem) => elem === this.state.newDish) ||
-            this.state.newDish === '') {
+            this.state.newDish === '' || !Number.isNaN(+this.state.newDish)) {
             this.setState(state => ({...state, isError: true}))
             return
         }
@@ -91,9 +81,10 @@ export class FetchOrderId extends Component {
             await this.reload()
         }
     }
-    //
+    
     async handleSubmit() {
-        if (this.state.newOrder.table < 1 || this.state.newOrder.table > 25) {
+        if (this.state.newOrder.table < 1 || this.state.newOrder.table > 25 
+            || Number.isNaN(+this.state.newOrder.table) || Number.isNaN(+this.state.newOrder.discount)) {
             this.setState(state => ({...state, isEditError: true}))
             return;
         }
@@ -108,7 +99,6 @@ export class FetchOrderId extends Component {
         }
     }
     
-    //
     async handleDeleteOrder() {
         await fetch(`Order/deleteOrder?orderId=${this.state.id}`,
             {

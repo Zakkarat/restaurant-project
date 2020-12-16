@@ -21,14 +21,20 @@ export class FetchOrder extends Component {
     handleChange({target}){
         this.setState(state => ({...state, newOrder: target.value}));
     }
-    //
+    
     async handleAdd() {
+        if (this.state.newOrder === '' || Number.isNaN(+this.state.newOrder)) {
+            this.setState(state => ({...state, isError: true}))
+            return
+        }
         this.setState(state => ({...state, isError: false}))
         await fetch(`Order/addOrder?tableId=${this.state.newOrder}`,
             {
                 method: "PUT"
-            });
-        await this.reload()
+            }).then(resp => resp.status !== 200 && this.setState(state => ({...state, isError: true})));;
+        if (!this.state.isError) {
+            await this.reload()
+        }
     }
  
     async reload() {

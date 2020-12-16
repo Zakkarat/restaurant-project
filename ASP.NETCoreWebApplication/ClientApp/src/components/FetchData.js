@@ -24,7 +24,9 @@ class FetchData extends Component {
   
   async handleSubmit() {
     if (this.state.dishes.some((elem) => elem.name === this.state.newDish.name) ||
-        !this.state.newDish.name || this.state.newDish.price < 0 || this.state.newDish.cookingTime < 0) {
+        !this.state.newDish.name || !this.state.newDish.price || !this.state.newDish.cookingTime 
+        || this.state.newDish.price <= 0 || this.state.newDish.cookingTime <= 0 
+        || !Number.isNaN(+this.state.newDish.name)) {
       this.setState(state => ({...state, isError: true}))
       return
     }

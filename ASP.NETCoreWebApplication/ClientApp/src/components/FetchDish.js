@@ -49,7 +49,7 @@ export class FetchDish extends Component {
     
     async handleAdd() {
         if (this.state.dish.ingredients.some((elem) => elem === this.state.newIngredient) ||
-            this.state.newIngredient === '') {
+            this.state.newIngredient === '' || !Number.isNaN(+this.state.newIngredient)) {
             this.setState(state => ({...state, isError: true}))
             return
         }
@@ -76,6 +76,12 @@ export class FetchDish extends Component {
     }
     
     async handleSubmit() {
+        if(!Number.isNaN(+this.state.newDish.name) || !this.state.newDish.name || !this.state.newDish.price 
+            || !this.state.newDish.cookingTime || this.state.newDish.price <= 0 
+            || this.state.newDish.cookingTime <= 0){
+            this.setState(state => ({...state, isEditError: true}))
+            return
+        }
         this.setState(state => ({...state, isEditError: false}))
         await fetch(`Dish/editDish?dishId=${this.state.id}&name=${this.state.newDish.name.split(' ').join('%20')}&cookingTime=${this.state.newDish.cookingTime}&price=${this.state.newDish.price}`,
             {

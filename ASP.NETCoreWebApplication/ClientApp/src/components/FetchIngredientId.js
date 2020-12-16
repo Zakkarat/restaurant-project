@@ -39,7 +39,7 @@ class FetchIngredientId extends Component {
     
     async handleApiEdit(){
         if (this.state.ingredients.some((elem) => elem.name === this.state.newIngredient) ||
-            this.state.newIngredient === '') {
+            this.state.newIngredient === '' || !Number.isNaN(+this.state.newIngredient)) {
             this.setState(state => ({...state, isError: true}))
             return
         }
