@@ -56,7 +56,7 @@ export class FetchDish extends Component {
         this.setState(state => ({...state, isError: false}))
         await fetch(`Dish/addIngredient?dishId=${this.state.id}&ingredient=${this.state.newIngredient}`,
             {
-                method: "POST"
+                method: "PUT"
             });
         await this.reload()
     }
@@ -70,7 +70,7 @@ export class FetchDish extends Component {
         this.setState(state => ({...state, isError: false}))
         await fetch(`Dish/deleteIngredient?dishId=${this.state.id}&ingredient=${this.state.newIngredient}`,
             {
-                method: "POST"
+                method: "DELETE"
             });
         await this.reload()
     }
@@ -90,7 +90,7 @@ export class FetchDish extends Component {
     async handleDeleteDish() {
         await fetch(`Dish/deleteDish?dishId=${this.state.id}`,
             {
-                method: "POST"
+                method: "DELETE"
             });
         this.setState(state => ({...state, isRedirect: true}))
     }

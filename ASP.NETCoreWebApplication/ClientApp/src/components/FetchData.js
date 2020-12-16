@@ -23,7 +23,6 @@ class FetchData extends Component {
   }
   
   async handleSubmit() {
-    console.log('heh')
     if (this.state.dishes.some((elem) => elem.name === this.state.newDish.name) ||
         !this.state.newDish.name || this.state.newDish.price < 0 || this.state.newDish.cookingTime < 0) {
       this.setState(state => ({...state, isError: true}))
@@ -32,7 +31,7 @@ class FetchData extends Component {
     this.setState(state => ({...state, isError: false}))
     await fetch(`Dish/addDish?name=${this.state.newDish.name.split(' ').join('%20')}&cookingTime=${this.state.newDish.cookingTime}&price=${this.state.newDish.price}`,
         {
-          method: "POST"
+          method: "PUT"
         });
     await this.reload()
   }

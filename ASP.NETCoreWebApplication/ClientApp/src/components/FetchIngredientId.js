@@ -24,7 +24,7 @@ class FetchIngredientId extends Component {
     async handleDelete() {
         await fetch(`Ingredient/delete?ingredient=${this.state.ingredient.name}`,
             {
-                method: "POST"
+                method: "DELETE"
             });
         this.setState(state => ({...state, isRedirect: true}))
     }
@@ -44,7 +44,7 @@ class FetchIngredientId extends Component {
             return
         }
         this.setState(state => ({...state, isError: false}))
-        await fetch(`https://localhost:3001/Ingredient/edit?oldIngredient=${this.state.id}&newIngredient=${this.state.newIngredient}`,
+        await fetch(`Ingredient/edit?oldIngredient=${this.state.id}&newIngredient=${this.state.newIngredient}`,
             {
                 method: "POST"
             });

@@ -26,17 +26,11 @@ export class FetchOrder extends Component {
         this.setState(state => ({...state, isError: false}))
         await fetch(`Order/addOrder?tableId=${this.state.newOrder}`,
             {
-                method: "POST"
+                method: "PUT"
             });
         await this.reload()
     }
-    //
-    // handleEditChange({target}) {
-    //     const newDish = this.state.newDish;
-    //     newDish[target.ariaLabel] = target.value
-    //     this.setState(state => ({...state, newDish: newDish}));
-    // }
-    //
+ 
     async reload() {
         const response = await fetch('order');
         const data = await response.json();
@@ -93,7 +87,7 @@ export class FetchOrder extends Component {
                 <InputGroup className="mb-3 w-25 mx-auto">
                     <FormControl value={this.state.newOrder}
                                  onChange={(e) => this.handleChange(e)}
-                                 placeholder="Start entering.."
+                                 placeholder="Enter table number.."
                                  aria-label="Recipient's username"
                                  aria-describedby="basic-addon2"
                     />

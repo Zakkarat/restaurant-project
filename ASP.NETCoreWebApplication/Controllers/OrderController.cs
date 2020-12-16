@@ -37,25 +37,25 @@ namespace ASP.NETCoreWebApplication.Controllers
             return (_mapper.Map<OrderDTO>(_service.Get(id)));
         }
         
-        [HttpPost("addOrder")]
+        [HttpPut("addOrder")]
         public void AddOrder(int tableId)
         {
             _service.AddOrder(tableId);
         }
         
-        [HttpPost("deleteOrder")]
+        [HttpDelete("deleteOrder")]
         public void DeleteOrder(int orderId)
         {
             _service.DeleteOrder(orderId);
         }
         
-        [HttpPost("addDish")]
+        [HttpPut("addDish")]
         public void AddDish(int orderId, string dish)
         {
             _service.AddDish(orderId, dish);
         }
         
-        [HttpPost("deleteDish")]
+        [HttpDelete("deleteDish")]
         public void DeleteDish(int orderId, string dish)
         {
             _service.DeleteDish(orderId, dish);

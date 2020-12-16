@@ -31,13 +31,13 @@ namespace ASP.NETCoreWebApplication.Controllers
             return (_mapper.Map<IEnumerable<IngredientDTO>>(_service.GetAll()));
         }
         
-        [HttpPost]
+        [HttpPut]
         public void Add(string ingredient)
         {
             _service.Add(ingredient);
         }
         
-        [HttpPost("delete")]
+        [HttpDelete("delete")]
         public void Delete(string ingredient)
         {
             _service.Delete(ingredient);

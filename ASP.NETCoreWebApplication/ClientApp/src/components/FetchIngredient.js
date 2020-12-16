@@ -32,7 +32,7 @@ export class FetchIngredient extends Component {
         this.setState(state => ({...state, isError: false}))
         await fetch(`Ingredient?ingredient=${this.state.newIngredient}`,
             {
-                method: "POST"
+                method: "PUT"
         });
         this.setState(state => ({...state, loading: true}))
         const response = await fetch('ingredient');

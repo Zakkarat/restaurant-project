@@ -25,7 +25,7 @@ namespace ASP.NETCoreWebApplication.Controllers
                 new MapperConfiguration(cfg
                     => cfg.AddProfile<DishProfile>()));
         }
-
+        
         [HttpGet]
         public IEnumerable<DishDTO> GetAll()
         {
@@ -38,25 +38,25 @@ namespace ASP.NETCoreWebApplication.Controllers
             return (_mapper.Map<DishDTO>(_service.Get(id)));
         }
 
-        [HttpPost("addIngredient")]
+        [HttpPut("addIngredient")]
         public void AddIngredient(int dishId, string ingredient)
         {
             _service.AddIngredient(dishId, ingredient);
         }
         
-        [HttpPost("deleteIngredient")]
+        [HttpDelete("deleteIngredient")]
         public void DeleteIngredient(int dishId, string ingredient)
         {
             _service.DeleteIngredient(dishId, ingredient);
         }
         
-        [HttpPost("deleteDish")]
+        [HttpDelete("deleteDish")]
         public void Delete(int dishId)
         {
             _service.Delete(dishId);
         }
         
-        [HttpPost("addDish")]
+        [HttpPut("addDish")]
         public void AddIDish(string name, int cookingTime, int price)
         {
             _service.AddDish(name, cookingTime, price);

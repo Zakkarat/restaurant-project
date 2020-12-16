@@ -69,9 +69,11 @@ export class FetchOrderId extends Component {
         this.setState(state => ({...state, isError: false}));
         await fetch(`Order/addDish?orderId=${this.state.id}&dish=${this.state.newDish}`,
             {
-                method: "POST"
-            });
-        await this.reload()
+                method: "PUT"
+            }).then(resp => resp.status !== 200 && this.setState(state => ({...state, isError: true})) );
+        if (!this.state.isError) {
+            await this.reload()
+        }
     }
     //
     async handleDelete() {
@@ -83,9 +85,11 @@ export class FetchOrderId extends Component {
         this.setState(state => ({...state, isError: false}));
         await fetch(`Order/deleteDish?orderId=${this.state.id}&dish=${this.state.newDish}`,
             {
-                method: "POST"
-            });
-        await this.reload()
+                method: "DELETE"
+            }).then(resp => resp.status !== 200 && this.setState(state => ({...state, isError: true})));
+        if (!this.state.isError) {
+            await this.reload()
+        }
     }
     //
     async handleSubmit() {
@@ -108,7 +112,7 @@ export class FetchOrderId extends Component {
     async handleDeleteOrder() {
         await fetch(`Order/deleteOrder?orderId=${this.state.id}`,
             {
-                method: "POST"
+                method: "DELETE"
             });
         this.setState(state => ({...state, isRedirect: true}))
     }
@@ -160,7 +164,7 @@ export class FetchOrderId extends Component {
                         <tr className="font-weight-bold">
                             <td style={{textAlign:"center"}} colSpan={2}>Overall:</td>
                             <td style={{textAlign:"center"}}>{accumulatedOrder.cookingTime}</td>
-                            <td style={{textAlign:"center"}}>{accumulatedOrder.price}</td>
+                            <td style={{textAlign:"center"}}>{accumulatedOrder.price > 0 ? accumulatedOrder.price :0}</td>
                             <td style={{textAlign:"center"}}>{accumulatedOrder.amount}</td>
                         </tr>
                     </tbody>

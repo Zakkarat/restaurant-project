@@ -1,9 +1,9 @@
 using System;
 using Restaurant.DAL.Entities;
 using Restaurant.DAL.Interfaces;
-using Restaurant.DAL.Utilities;
+using Restaurant.DAL.Repositories;
 
-namespace Restaurant.DAL.Repositories
+namespace Restaurant.DAL.Utilities
 {
     public class EUnitOfWork : IUnitOfWork, IDisposable
     {
