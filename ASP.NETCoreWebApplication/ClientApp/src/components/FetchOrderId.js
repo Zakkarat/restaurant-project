@@ -20,15 +20,7 @@ export class FetchOrderId extends Component {
         this.initId();
         this.Order();
     }
-
-    // handleChange({target}){
-    //     this.setState(state => ({...state, search: target.value}));
-    // }
-    //
-    // handleClick() {
-    //     this.setState(state => ({...state, action: state.action === "Add" ? "" : "Add"}));
-    // }
-    //
+    
     handleClickEdit() {
         this.setState(state => ({...state, isEdit: !state.isEdit}));
     }

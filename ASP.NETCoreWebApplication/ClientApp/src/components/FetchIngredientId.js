@@ -7,7 +7,9 @@ class FetchIngredientId extends Component {
 
     constructor(props) {
         super(props);
-        this.state = { ingredient: {}, id: -1, loading: true, isRedirect: false, isEdit: false, newIngredient: "", ingredients: [] };
+        this.state = { ingredient: {}, id: -1, loading: true, isRedirect: false, 
+            isEdit: false, newIngredient: "", ingredients: [], isError: false,
+            isDeleteError: false};
     }
 
     async initId(){
@@ -25,7 +27,12 @@ class FetchIngredientId extends Component {
         await fetch(`Ingredient/delete?ingredient=${this.state.ingredient.name}`,
             {
                 method: "DELETE"
-            });
+            }).then(resp => resp.status !== 200 && this.setState(state => ({...state, isDeleteError: true})) );
+        console.log(this.state);
+        if (this.state.isDeleteError) {
+            this.setState(state => ({...state, isRedirect: false}))
+            return
+        }
         this.setState(state => ({...state, isRedirect: true}))
     }
 
@@ -74,6 +81,9 @@ class FetchIngredientId extends Component {
                             </Button>
                         </Col>
                     </Row>
+                    {this.state.isDeleteError &&
+                    <p style={{textAlign: "center", color: "red"}}
+                       className="font-weight-bold mt-3">You can't delete this ingredient. It exists in a dish.</p>}
                     {this.state.isEdit &&
                     <>
                         <InputGroup className="mt-3 w-75 mx-auto">

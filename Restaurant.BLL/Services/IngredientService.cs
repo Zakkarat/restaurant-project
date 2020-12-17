@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
@@ -70,6 +71,10 @@ namespace Restaurant.BLL.Services
             {
                 _db.Ingredients.Delete(ingr.Id);
                 _db.Save();
+            }
+            else
+            {
+                throw new Exception("Sorry, this operation can't be done. Try again!");
             }
         }
     }
